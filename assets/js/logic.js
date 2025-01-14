@@ -13,8 +13,6 @@ for (let i = 0; i < 5; i++) {
         const locInfo = document.querySelector('#loc-info');
         locInfo.textContent = infos[i];
     }
-    // updates.push(updateInfo);
-    // locs.push(location);
 
     location.addEventListener('click', updateInfo);
 }
