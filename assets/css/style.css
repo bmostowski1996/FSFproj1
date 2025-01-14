@@ -1,0 +1,11 @@
+.aoi:hover {
+    cursor: pointer;
+  }
+
+.info-box {
+    width: 35%;
+    margin-right: 5%;
+    margin-left: auto;
+
+    margin-left: 5%;
+}
