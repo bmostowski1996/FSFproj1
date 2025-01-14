@@ -17,10 +17,21 @@ for (let i = 0; i < 5; i++) {
     location.addEventListener('click', updateInfo);
 }
 
-console.log(locs);
+foo = false;
 
-//let locEl = document.querySelector('#loc1'); 
+const toggleFoo = function() {
+    foo = !foo;  // Toggle the value of foo
+    const box = document.querySelector('.info-box');
+    if (foo) {
+        box.style.marginLeft = '5%';
+        box.style.marginRight = 'auto';
+    } else {
+        box.style.marginLeft = 'auto';
+        box.style.marginRight = '5%';
+    }
+}
 
-//Image.addEventListener('click', function()) {
- // alert('Location 1');
-//};
+toggleFoo();
+// console.log(locs);
+
+
