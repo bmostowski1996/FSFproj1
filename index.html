@@ -18,20 +18,24 @@
     </head>
     <body>
         <div class="container text-center mt-5">
-            <h1 class="text-primary">Hello, Bootstrap!</h1>
+            <h1 class="text-primary">Travel Bible</h1>
             <!-- It'd be nice if I could directly influence the locations of these buttons. Right now they display serially on the same row, which is not desirable.-->
-            <button class="btn btn-success">Location 1</button>
+            <!-- <button class="btn btn-success">Location 1</button>
             <button class="btn btn-success" >Location 2</button>
             <button class="btn btn-success" >Location 3</button>
             <button class="btn btn-success" >Location 4</button>
-            <button class="btn btn-success" >Location 5</button>
+            <button class="btn btn-success" >Location 5</button> -->
 
-            <!-- As a test, let's make it so that when we click on a button, the text content of a p element will change.-->
+            <!-- The contents of the p element below will change based on what part of the map we click.-->
             <p id="loc-info">&nbsp;</p>
         </div>
-        <img src="./assets/images/united-states-map-with-state-names.png" usemap="#image-map" id="#map">
+
+        <div class="d-flex justify-content-center">
+            <img src="./assets/images/united-states-map-with-state-names.png" usemap="#image-map" id="map">
+        </div>
         
-        <map name="image-map">
+        
+        <map name="image-map" id="image-map">
             <area target="" alt="Florida" title="Florida" coords="727,542,780,536,837,539,859,527,876,570,886,590,903,629,900,655,893,663,883,664,865,637,843,609,832,570,801,558,786,565" shape="poly" id="loc1">
             <area target="" alt="Louisiana " title="Louisiana " coords="595,496,652,494,658,513,649,522,646,541,680,541,684,556,694,569,698,590,680,587,660,587,638,581,621,578,599,578,607,552,595,528" shape="poly" id="loc2">
             <area target="" alt="New York" title="New York"  coords="861,222,851,246,861,253,935,238,961,256,966,239,963,218,959,196,953,182,949,159,925,161,908,173,902,198,870,215" shape="poly" id="loc3">
