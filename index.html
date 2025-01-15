@@ -80,28 +80,7 @@
             </div>
               <!-- <p>This is the content for popup 1.</p> -->
             </div>
-          </div>
-
-          <script>
-            // Function to open the popup
-            function openPopup(popupId) {
-              document.getElementById(popupId).style.display = "block"
-            };
-          
-            // Function to close the popup
-            function closePopup(popupId) {
-              document.getElementById(popupId).style.display = "none";
-            };
-          
-            // Add event listeners to the areas
-            document.querySelectorAll('.popup-trigger').forEach(function(area) {
-              area.addEventListener('click', function(e) {
-                e.preventDefault();
-                const popupId = this.getAttribute('data-popup');
-                openPopup(popupId);
-              });
-            });
-          </script>          
+          </div> 
           
 
         <button onclick="toggleFoo()" class="btn btn-success">Toggle Position</button>
