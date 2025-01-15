@@ -3,12 +3,52 @@
   }
 
 .info-box {
-    width: 35%;
+    width: 90%;
     margin-right: 5%;
     margin-left: auto;
 
     margin-left: 5%;
 }
+
+
+.popup {
+  display: none; /* Hidden by default */
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 75%;
+  height: 75%;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  padding-top: 100px;
+  /*overflow: scroll;*/
+}
+
+.popup-content {
+  position: absolute;
+  margin: 100px;
+  padding: 0px;
+  border-radius: 0px;
+  width: 400px;
+  height: 400px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 
 #map {
   display: block;

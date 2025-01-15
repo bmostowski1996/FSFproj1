@@ -8,16 +8,22 @@ infos = [
 for (let i = 0; i < 5; i++) {
     let idstr = '#loc' + String(i+1);
     const location = document.querySelector(idstr);
-
+    
     if (location !== null) {
         const updateInfo = function () {
             const locInfo = document.querySelector('#loc-info');
             locInfo.textContent = infos[i];
         }
-    
+
         location.addEventListener('click', updateInfo);
     }
 
+   const showTextbox = document.querySelector('#show-textbox');
+    
+   // showTextbox.addEventListener('click', function() {
+     // popupTextbox.style.display = 'block';  // Show the text box
+    // overlay.style.display = 'block';  // Show the overlay
+    // });
 }
 
 foo = false;
@@ -40,7 +46,7 @@ toggleFoo();
 const resizeMap = function () {
     // When the webpage is resized, make sure that the image map coordinates are set properly
     const img = document.querySelector('#map');
-    const imgMap = document.querySelector('#image-map');
+    const imgMap = document.querySelector('.image-map');
 
     const originalWidth = 1100;
     const originalHeight = 703;
@@ -67,4 +73,7 @@ window.onload = () => {
 
 
 window.addEventListener('resize', resizeMap);
+
+
+
 
