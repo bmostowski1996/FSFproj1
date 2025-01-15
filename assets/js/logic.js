@@ -15,6 +15,14 @@ for (let i = 0; i < 5; i++) {
     }
 
     location.addEventListener('click', updateInfo);
+
+
+   const showTextbox = document.querySelector('#show-textbox');
+    
+   // showTextbox.addEventListener('click', function() {
+     // popupTextbox.style.display = 'block';  // Show the text box
+    // overlay.style.display = 'block';  // Show the overlay
+    // });
 }
 
 foo = false;
@@ -33,5 +41,8 @@ const toggleFoo = function() {
 
 toggleFoo();
 // console.log(locs);
+
+
+
 
 

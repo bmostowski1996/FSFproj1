@@ -31,13 +31,73 @@
         </div>
         <img src="./assets/images/united-states-map-with-state-names.png" usemap="#image-map">
         
-        <map name="image-map">
-            <area target="" alt="Florida" title="Florida" coords="727,542,780,536,837,539,859,527,876,570,886,590,903,629,900,655,893,663,883,664,865,637,843,609,832,570,801,558,786,565" shape="poly" id="loc1">
-            <area target="" alt="Louisiana " title="Louisiana " coords="595,496,652,494,658,513,649,522,646,541,680,541,684,556,694,569,698,590,680,587,660,587,638,581,621,578,599,578,607,552,595,528" shape="poly" id="loc2">
+        <map name="image-map" id="showTextBox">
+            <area target="" alt="Florida" title="Florida" coords="727,542,780,536,837,539,859,527,876,570,886,590,903,629,900,655,893,663,883,664,865,637,843,609,832,570,801,558,786,565" shape="poly" id="loc2" class="popup-trigger" data-popup="popup1">
+            <area target="" alt="Louisiana " title="Louisiana " coords="595,496,652,494,658,513,649,522,646,541,680,541,684,556,694,569,698,590,680,587,660,587,638,581,621,578,599,578,607,552,595,528" shape="poly" id="loc1">
             <area target="" alt="New York" title="New York"  coords="861,222,851,246,861,253,935,238,961,256,966,239,963,218,959,196,953,182,949,159,925,161,908,173,902,198,870,215" shape="poly" id="loc3">
             <area target="" alt="Georgia" title="Georgia"  coords="810,434,831,457,853,479,861,498,857,516,853,525,844,535,830,536,817,533,808,536,788,533,785,524,783,505,780,494,774,482,772,470,768,451,768,439" shape="poly" id="loc4">
             <area target="" alt="N/A" title="N/A"  coords="89,26,665,117,686,398,645,484,585,489,596,546,532,654,529,674,475,670,65,501,16,216" shape="poly" onclick="alert('More infomation on this destionation soon!')">
         </map>
+
+        <div id="popup1" class="popup">
+            <div class="popup-content">
+              <span class="close-btn" onclick="closePopup('popup1')">&times;</span>
+              <div class="border p-5 bg-light rounded shadow info-box">
+                <h3 class="border-bottom pb-2 mb-3">Key West, FL</h3>
+                
+                <h4>Must try foods:</h4>
+                <ul class="border-bottom pb-2 mb-3">
+                    <li>Blue Heaven</li>
+                    <li>Key Lime Pie Bakery</li>
+                    <li>First Flight Island Restaurant</li>
+                </ul>
+                
+                <h4>Places to go:</h4>
+                <ul class="border-bottom pb-2 mb-3">
+                    <li>Duval St.</li>
+                    <li>Mallory Square</li>
+                    <li>Fort Zachary Taylor Historic State Park</li>
+                </ul>
+    
+                <h4>More About This Location</h4>
+                <p>
+                Key West possesses a unique blend of Cuban, West Indian, Bahamian, and American atmosphere. 
+                The city is known for its architecture, particularly its many 19th-century wooden homes, and 
+                as a haven for writers, artists, and those preferring less conventional lifestyles. Our tiny 
+                island is steeped in history, and you can’t help but fall in love with our dialed-up-to-11, 
+                old-world charm. From the ornate latticework of our architecture and our chocolate-box neighborhoods 
+                to the iconically circusy Mallory Square, Key West exudes a unique character that sets us apart from 
+                any other place. The southernmost point in the United States, is famous for watersports, lively 
+                nightlife, beaches, historic sites and its pastel, conch-style architecture. Last but not least, 
+                a “winter wonderland” in Key West looks more like a beautiful beach paradise. With temperatures 
+                generally hovering in the mid-70s each day and hardly ever dropping below 65 degrees, it’s 
+                no wonder so many tourists choose to flock to our magnificent little island each year at this time!</p>
+            </div>
+              <!-- <p>This is the content for popup 1.</p> -->
+            </div>
+          </div>
+
+          <script>
+            // Function to open the popup
+            function openPopup(popupId) {
+              document.getElementById(popupId).style.display = "block"
+            };
+          
+            // Function to close the popup
+            function closePopup(popupId) {
+              document.getElementById(popupId).style.display = "none";
+            };
+          
+            // Add event listeners to the areas
+            document.querySelectorAll('.popup-trigger').forEach(function(area) {
+              area.addEventListener('click', function(e) {
+                e.preventDefault();
+                const popupId = this.getAttribute('data-popup');
+                openPopup(popupId);
+              });
+            });
+          </script>          
+          
 
         <button onclick="toggleFoo()" class="btn btn-success">Toggle Position</button>
         <!-- I want this div to represent the information we get when we click on a state.-->
