@@ -3,7 +3,7 @@
   }
 
 .info-box {
-    width: 100%;
+    width: 90%;
     margin-right: 5%;
     margin-left: auto;
 
@@ -21,7 +21,7 @@
   height: 75%;
   /* background-color: rgba(0, 0, 0, 0.5); */
   padding-top: 100px;
-  overflow: scroll;
+  /*overflow: scroll;*/
 }
 
 .popup-content {
@@ -29,9 +29,10 @@
   margin: 100px;
   padding: 0px;
   border-radius: 0px;
-  width: 1000px;
+  width: 400px;
   height: 400px;
-  /* overflow: scroll; */
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .close-btn {

@@ -8,14 +8,15 @@ infos = [
 for (let i = 0; i < 5; i++) {
     let idstr = '#loc' + String(i+1);
     const location = document.querySelector(idstr);
+    
+    if (location !== null) {
+        const updateInfo = function () {
+            const locInfo = document.querySelector('#loc-info');
+            locInfo.textContent = infos[i];
+        }
 
-    const updateInfo = function () {
-        const locInfo = document.querySelector('#loc-info');
-        locInfo.textContent = infos[i];
+        location.addEventListener('click', updateInfo);
     }
-
-    location.addEventListener('click', updateInfo);
-
 
    const showTextbox = document.querySelector('#show-textbox');
     
