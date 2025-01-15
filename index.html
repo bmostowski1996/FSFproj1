@@ -34,16 +34,9 @@
             <img src="./assets/images/united-states-map-with-state-names.png" usemap="#image-map" id="map">
         </div>
         
-<<<<<<< HEAD
-        <map name="image-map" id="showTextBox">
-            <area target="" alt="Florida" title="Florida" coords="727,542,780,536,837,539,859,527,876,570,886,590,903,629,900,655,893,663,883,664,865,637,843,609,832,570,801,558,786,565" shape="poly" id="loc2" class="popup-trigger" data-popup="popup1">
-            <area target="" alt="Louisiana " title="Louisiana " coords="595,496,652,494,658,513,649,522,646,541,680,541,684,556,694,569,698,590,680,587,660,587,638,581,621,578,599,578,607,552,595,528" shape="poly" id="loc1">
-=======
-        
-        <map name="image-map" id="image-map">
-            <area target="" alt="Florida" title="Florida" coords="727,542,780,536,837,539,859,527,876,570,886,590,903,629,900,655,893,663,883,664,865,637,843,609,832,570,801,558,786,565" shape="poly" id="loc1">
+        <map name="image-map" id="showTextBox" class="image-map">
+            <area target="" alt="Florida" title="Florida" coords="727,542,780,536,837,539,859,527,876,570,886,590,903,629,900,655,893,663,883,664,865,637,843,609,832,570,801,558,786,565" shape="poly" id="loc1" class="popup-trigger" data-popup="popup1">
             <area target="" alt="Louisiana " title="Louisiana " coords="595,496,652,494,658,513,649,522,646,541,680,541,684,556,694,569,698,590,680,587,660,587,638,581,621,578,599,578,607,552,595,528" shape="poly" id="loc2">
->>>>>>> 65bce492f2e5aa9757549b5a670b8c74dfe7f694
             <area target="" alt="New York" title="New York"  coords="861,222,851,246,861,253,935,238,961,256,966,239,963,218,959,196,953,182,949,159,925,161,908,173,902,198,870,215" shape="poly" id="loc3">
             <area target="" alt="Georgia" title="Georgia"  coords="810,434,831,457,853,479,861,498,857,516,853,525,844,535,830,536,817,533,808,536,788,533,785,524,783,505,780,494,774,482,772,470,768,451,768,439" shape="poly" id="loc4">
             <area target="" alt="N/A" title="N/A"  coords="89,26,665,117,686,398,645,484,585,489,596,546,532,654,529,674,475,670,65,501,16,216" shape="poly" onclick="alert('More infomation on this destionation soon!')">
@@ -51,8 +44,9 @@
 
         <div id="popup1" class="popup">
             <div class="popup-content">
-              <span class="close-btn" onclick="closePopup('popup1')">&times;</span>
               <div class="border p-5 bg-light rounded shadow info-box">
+                <span class="close-btn" onclick="closePopup('popup1')">&times;</span>
+                
                 <h3 class="border-bottom pb-2 mb-3">Key West, FL</h3>
                 
                 <h4>Must try foods:</h4>
