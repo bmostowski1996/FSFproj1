@@ -10,6 +10,7 @@
     margin-left: 5%;
 }
 
+<<<<<<< HEAD
 
 .popup {
   display: none; /* Hidden by default */
@@ -49,3 +50,16 @@
 }
 
 
+=======
+#map {
+  display: block;
+  text-align: center;
+  width: 100%;
+  max-width: 1700px;
+  min-width: 700px;
+}
+
+area:hover {
+  cursor:pointer;
+}
+>>>>>>> 65bce492f2e5aa9757549b5a670b8c74dfe7f694
