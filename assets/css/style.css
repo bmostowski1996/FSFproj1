@@ -9,3 +9,15 @@
 
     margin-left: 5%;
 }
+
+#map {
+  display: block;
+  text-align: center;
+  width: 100%;
+  max-width: 1700px;
+  min-width: 700px;
+}
+
+area:hover {
+  cursor:pointer;
+}
