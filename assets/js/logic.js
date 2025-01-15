@@ -18,12 +18,7 @@ for (let i = 0; i < 5; i++) {
         location.addEventListener('click', updateInfo);
     }
 
-   const showTextbox = document.querySelector('#show-textbox');
-    
-   // showTextbox.addEventListener('click', function() {
-     // popupTextbox.style.display = 'block';  // Show the text box
-    // overlay.style.display = 'block';  // Show the overlay
-    // });
+   const showTextbox = document.querySelector('#show-textbox');    
 }
 
 foo = false;
@@ -73,6 +68,24 @@ window.onload = () => {
 
 
 window.addEventListener('resize', resizeMap);
+
+function openPopup(popupId) {
+    document.getElementById(popupId).style.display = "block"
+  };
+
+  // Function to close the popup
+  function closePopup(popupId) {
+    document.getElementById(popupId).style.display = "none";
+  };
+
+  // Add event listeners to the areas
+  document.querySelectorAll('.popup-trigger').forEach(function(area) {
+    area.addEventListener('click', function(e) {
+      e.preventDefault();
+      const popupId = this.getAttribute('data-popup');
+      openPopup(popupId);
+    });
+  });
 
 
 
