@@ -1,29 +1,37 @@
 infos = [
-    'Welcome to Key West, FL', 
-    'Welcome to New Orleans, LA', 
-    'Welcome to New York, NY', 
-    'Welcome to Atlanta, GA', 
-    'Welcome to Washington, D.C.'];
+    'Key West, FL', 
+    'New Orleans, LA', 
+    'New York, NY', 
+    'Atlanta, GA', 
+    'Washington, D.C.'
+];
+
+foods = [
+    [],
+    [],
+    [],
+]
+
+summaries = [
+
+]
 
 for (let i = 0; i < 5; i++) {
     let idstr = '#loc' + String(i+1);
     const location = document.querySelector(idstr);
     
     if (location !== null) {
+        // Meat and potatoes function
         const updateInfo = function () {
             const locInfo = document.querySelector('#loc-info');
+            const summary = document.querySelector('#sum-info');
+
             locInfo.textContent = infos[i];
+            summary.textContent = summaries[i];
         }
 
         location.addEventListener('click', updateInfo);
     }
-
-   const showTextbox = document.querySelector('#show-textbox');
-    
-   // showTextbox.addEventListener('click', function() {
-     // popupTextbox.style.display = 'block';  // Show the text box
-    // overlay.style.display = 'block';  // Show the overlay
-    // });
 }
 
 foo = false;
