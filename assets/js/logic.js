@@ -18,7 +18,7 @@ places_to_go = [
     ['Duval St', 'Mallory Square', 'Fort Zachary Taylor Historic State Park'],
     ['The French Quarter', 'Bourbon Street', 'Jackson Square'],
     ['34th Street time square', 'Empire State Building', 'Yankee Stadium'],
-    [],
+    ['National Mall', 'Smithsonian Museums', 'Georgetown', 'U.S. Capitol and Library of Congress'],
     []
 ]
 
@@ -50,7 +50,10 @@ summaries = [
     Statue of Liberty. Hayden Planetarium which is located within the Hayden Sphere, uses advanced technology 
     to simulate the night sky experiencing the beauty and wonder of the cosmos.`,
 
-    'test3', // Still need a summary for this location...
+    `Atlanta is the capital of the U.S. state of Georgia. It played an important part in both the Civil War 
+    and the 1960s Civil Rights Movement. Atlanta History Center chronicles the city’s past, and the 
+    Martin Luther King Jr. National Historic Site is dedicated to the African-American leader’s life and times. 
+    Downtown, Centennial Olympic Park, built for the 1996 Olympics, encompasses the massive Georgia Aquarium`, 
 
     `Washington, D.C., is more than just the nation’s capital; it’s a city brimming with history, culture, 
     and vibrant local life. Visitors can immerse themselves in American history while touring iconic landmarks 
