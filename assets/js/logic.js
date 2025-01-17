@@ -7,6 +7,12 @@ infos = [
 ];
 
 foods = [
+    ['Blue Heaven', 'Key Lime Pie Bakery', 'First Flight Island Restaurant'],
+    ['Gumbo', "Po'boys", 'Beignets'],
+    [],
+];
+
+places = [
     [],
     [],
     [],
@@ -40,7 +46,13 @@ summaries = [
     Statue of Liberty. Hayden Planetarium which is located within the Hayden Sphere, uses advanced technology 
     to simulate the night sky experiencing the beauty and wonder of the cosmos.`,
 
-    'test3', // Still need a summary for this location...
+    `Washington, D.C., is more than just the nation’s capital; it’s a city brimming with history, culture, 
+    and vibrant local life. Visitors can immerse themselves in American history while touring iconic landmarks 
+    and monuments or exploring the city's many free world-class museums. The food scene offers everything from 
+    fine dining to beloved local staples like the half-smoke. Georgetown provides a charming neighborhood vibe 
+    with cobblestone streets and boutique shops. Whether you’re strolling along the Tidal Basin during cherry 
+    blossom season or taking in a lively local music scene, D.C. offers a mix of history, art, and modern charm 
+    that makes it a standout destination.`, // Still need a summary for this location...
 
     `Washington, D.C., is more than just the nation’s capital; it’s a city brimming with history, culture, 
     and vibrant local life. Visitors can immerse themselves in American history while touring iconic landmarks 
@@ -49,8 +61,6 @@ summaries = [
     with cobblestone streets and boutique shops. Whether you’re strolling along the Tidal Basin during cherry 
     blossom season or taking in a lively local music scene, D.C. offers a mix of history, art, and modern charm 
     that makes it a standout destination.`,
-
-    'test4',
 ]
 
 for (let i = 0; i < 5; i++) {
@@ -62,12 +72,13 @@ for (let i = 0; i < 5; i++) {
         const updateInfo = function () {
             const locInfo = document.querySelector('#loc-info');
             const summary = document.querySelector('#sum-info');
-            
-            const place = document.querySelector('#place-info');
-            const food = document.querySelector('#food-info');
+            const placeInfo = document.querySelector('#place-info');
+            const foodInfo = document.querySelector('#food-info');
 
             locInfo.textContent = infos[i];
             summary.textContent = summaries[i];
+            //foodInfo.textContent = foods[i];
+            //placeInfo.textContent = places[i];
         }
 
         location.addEventListener('click', updateInfo);
