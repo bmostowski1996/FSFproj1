@@ -1,4 +1,4 @@
-infos = [
+locations = [
     'Key West, FL', 
     'New Orleans, LA', 
     'New York, NY', 
@@ -7,9 +7,23 @@ infos = [
 ];
 
 foods = [
-    [],
-    [],
-    [],
+    ['Blue Heaven', 'Key Lime Pie Bakery', 'First Flight Island Restaurant'],
+    ['Gumbo', 'Po\'boys', 'Beignets'],
+    ['Buenos Aires Restaurant Argentine, Steakhouse', 'L&B Spumoni Garden, Italian', 'Villabate Alba Bakery'],
+    ['Lazy Betty', 'Poor Calvins', 'Vortex Bar & Grill'],
+    ['Half-Smoke', 'Mumbo Sauce', 'Ethiopian Cuisine']
+]
+
+places_to_go = [
+    ['Duval St', 'Mallory Square', 'Fort Zachary Taylor Historic State Park'],
+    ['The French Quarter', 'Bourbon Street', 'Jackson Square'],
+    ['34th Street time square', 'Empire State Building', 'Yankee Stadium'],
+    ['Atlanta Botanica Garden' , 'World of Coca-Cola' , 'Martin Luther King, Jr. National Historical Park'],
+    ['National Mall',
+        'Smithsonian Museum',
+        'Georgetown',
+        'U.S. Capitol',
+        'Library of Congress'],
 ]
 
 summaries = [
@@ -40,7 +54,13 @@ summaries = [
     Statue of Liberty. Hayden Planetarium which is located within the Hayden Sphere, uses advanced technology 
     to simulate the night sky experiencing the beauty and wonder of the cosmos.`,
 
-    'test3', // Still need a summary for this location...
+    `Washington, D.C., is more than just the nation’s capital; it’s a city brimming with history, culture, 
+    and vibrant local life. Visitors can immerse themselves in American history while touring iconic landmarks 
+    and monuments or exploring the city's many free world-class museums. The food scene offers everything from 
+    fine dining to beloved local staples like the half-smoke. Georgetown provides a charming neighborhood vibe 
+    with cobblestone streets and boutique shops. Whether you’re strolling along the Tidal Basin during cherry 
+    blossom season or taking in a lively local music scene, D.C. offers a mix of history, art, and modern charm 
+    that makes it a standout destination.`, // Still need a summary for this location...
 
     `Washington, D.C., is more than just the nation’s capital; it’s a city brimming with history, culture, 
     and vibrant local life. Visitors can immerse themselves in American history while touring iconic landmarks 
@@ -49,8 +69,6 @@ summaries = [
     with cobblestone streets and boutique shops. Whether you’re strolling along the Tidal Basin during cherry 
     blossom season or taking in a lively local music scene, D.C. offers a mix of history, art, and modern charm 
     that makes it a standout destination.`,
-
-    'test4',
 ]
 
 for (let i = 0; i < 5; i++) {
@@ -63,11 +81,31 @@ for (let i = 0; i < 5; i++) {
             const locInfo = document.querySelector('#loc-info');
             const summary = document.querySelector('#sum-info');
             
-            const place = document.querySelector('#place-info');
-            const food = document.querySelector('#food-info');
+            const place_list = document.querySelector('#place-info');
+            const food_list = document.querySelector('#food-info');
 
-            locInfo.textContent = infos[i];
+            locInfo.textContent = locations[i];
             summary.textContent = summaries[i];
+
+            place_list.replaceChildren();
+            food_list.replaceChildren();
+
+            // For place info
+
+            for (const place of places_to_go[i]) {
+                const li = document.createElement('li');
+                li.textContent = place;
+                place_list.appendChild(li);
+            }
+
+            // For food info
+
+            for (const food of foods[i]) {
+                const li = document.createElement('li');
+                li.textContent = food;
+                food_list.appendChild(li);
+            }
+            
         }
 
         location.addEventListener('click', updateInfo);
@@ -135,8 +173,8 @@ function openPopup(popupId) {
   document.querySelectorAll('.popup-trigger').forEach(function(area) {
     area.addEventListener('click', function(e) {
       e.preventDefault();
-      const popupId = this.getAttribute('data-popup');
-      openPopup(popupId);
+      openPopup('popup1');
+      // const popupId = this.getAttribute('data-popup');
     });
   });
 
