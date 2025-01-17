@@ -11,16 +11,14 @@ foods = [
     ['Gumbo', 'Po\'boys', 'Beignets'],
     ['Buenos Aires Restaurant Argentine, Steakhouse', 'L&B Spumoni Garden, Italian', 'Villabate Alba Bakery'],
     ['Lazy Betty', 'Poor Calvins', 'Vortex Bar & Grill'],
-    ['Half-Smoke D.C. signature sausage', 'best at Ben’s, Chili Bowl',
-        'Mumbo, Sauce Sweet and tangy', 'a local favorite with fried chickenn',
-        'Ethiopian Cuisine Authentic flavors in Little Ethiopia']
+    ['Half-Smoke', 'Mumbo Sauce', 'Ethiopian Cuisine']
 ]
 
 places_to_go = [
     ['Duval St', 'Mallory Square', 'Fort Zachary Taylor Historic State Park'],
     ['The French Quarter', 'Bourbon Street', 'Jackson Square'],
     ['34th Street time square', 'Empire State Building', 'Yankee Stadium'],
-    ['Atlanta Botanica Garden' , 'World of Coca-Cola' , 'Martin Luther King, Jr. National Historical Park']
+    ['Atlanta Botanica Garden' , 'World of Coca-Cola' , 'Martin Luther King, Jr. National Historical Park'],
     ['National Mall',
         'Smithsonian Museum',
         'Georgetown',
