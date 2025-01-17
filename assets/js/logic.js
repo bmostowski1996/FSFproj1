@@ -94,7 +94,7 @@ toggleFoo();
 const resizeMap = function () {
     // When the webpage is resized, make sure that the image map coordinates are set properly
     const img = document.querySelector('#map');
-    const imgMap = document.querySelector('#image-map');
+    const imgMap = document.querySelector('.image-map');
 
     const originalWidth = 1100;
     const originalHeight = 703;
