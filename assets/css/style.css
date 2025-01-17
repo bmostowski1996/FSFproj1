@@ -34,6 +34,14 @@ area:hover {
   overflow-x: hidden;
 }
 
+#map {
+  display: block;
+  text-align: center;
+  width: 100%;
+  max-width: 1700px;
+  min-width: 700px;
+}
+
 .close-btn {
   color: #aaa;
   float: right;
