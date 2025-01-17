@@ -20,10 +20,11 @@ places_to_go = [
     ['Duval St', 'Mallory Square', 'Fort Zachary Taylor Historic State Park'],
     ['The French Quarter', 'Bourbon Street', 'Jackson Square'],
     ['34th Street time square', 'Empire State Building', 'Yankee Stadium'],
-    ['National Mall home to the Lincoln Memorial, Washington Monument, and more',
-        'Smithsonian Museums many are free',
-        'Georgetown for shopping, dining, and scenic waterfront views',
-        'U.S. Capitol and Library of Congress'],
+    ['National Mall',
+        'Smithsonian Museum',
+        'Georgetown',
+        'U.S. Capitol',
+        'Library of Congress'],
     []
 ]
 
@@ -55,7 +56,13 @@ summaries = [
     Statue of Liberty. Hayden Planetarium which is located within the Hayden Sphere, uses advanced technology 
     to simulate the night sky experiencing the beauty and wonder of the cosmos.`,
 
-    'test3', // Still need a summary for this location...
+    `Washington, D.C., is more than just the nation’s capital; it’s a city brimming with history, culture, 
+    and vibrant local life. Visitors can immerse themselves in American history while touring iconic landmarks 
+    and monuments or exploring the city's many free world-class museums. The food scene offers everything from 
+    fine dining to beloved local staples like the half-smoke. Georgetown provides a charming neighborhood vibe 
+    with cobblestone streets and boutique shops. Whether you’re strolling along the Tidal Basin during cherry 
+    blossom season or taking in a lively local music scene, D.C. offers a mix of history, art, and modern charm 
+    that makes it a standout destination.`, // Still need a summary for this location...
 
     `Washington, D.C., is more than just the nation’s capital; it’s a city brimming with history, culture, 
     and vibrant local life. Visitors can immerse themselves in American history while touring iconic landmarks 
@@ -64,8 +71,6 @@ summaries = [
     with cobblestone streets and boutique shops. Whether you’re strolling along the Tidal Basin during cherry 
     blossom season or taking in a lively local music scene, D.C. offers a mix of history, art, and modern charm 
     that makes it a standout destination.`,
-
-    'test4',
 ]
 
 for (let i = 0; i < 5; i++) {
@@ -170,8 +175,8 @@ function openPopup(popupId) {
   document.querySelectorAll('.popup-trigger').forEach(function(area) {
     area.addEventListener('click', function(e) {
       e.preventDefault();
-      const popupId = this.getAttribute('data-popup');
-      openPopup(popupId);
+      openPopup('popup1');
+      // const popupId = this.getAttribute('data-popup');
     });
   });
 
