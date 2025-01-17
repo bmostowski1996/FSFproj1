@@ -10,15 +10,20 @@ foods = [
     ['Blue Heaven', 'Key Lime Pie Bakery', 'First Flight Island Restaurant'],
     ['Gumbo', 'Po\'boys', 'Beignets'],
     ['Buenos Aires Restaurant Argentine, Steakhouse', 'L&B Spumoni Garden, Italian', 'Villabate Alba Bakery'],
-    [],
-    []
+    ['Eats', 'Poor Calvins', 'Home grown GA Restaurant'],
+    ['Half-Smoke D.C. signature sausage', 'best at Ben’s, Chili Bowl',
+        'Mumbo, Sauce Sweet and tangy', 'a local favorite with fried chickenn',
+        'Ethiopian Cuisine Authentic flavors in Little Ethiopia']
 ]
 
 places_to_go = [
     ['Duval St', 'Mallory Square', 'Fort Zachary Taylor Historic State Park'],
     ['The French Quarter', 'Bourbon Street', 'Jackson Square'],
     ['34th Street time square', 'Empire State Building', 'Yankee Stadium'],
-    [],
+    ['National Mall home to the Lincoln Memorial, Washington Monument, and more',
+        'Smithsonian Museums many are free',
+        'Georgetown for shopping, dining, and scenic waterfront views',
+        'U.S. Capitol and Library of Congress'],
     []
 ]
 
