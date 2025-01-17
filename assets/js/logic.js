@@ -7,9 +7,19 @@ infos = [
 ];
 
 foods = [
+    ['Blue Heaven', 'Key Lime Pie Bakery', 'First Flight Island Restaurant'],
+    ['Gumbo', 'Po\'boys', 'Beignets'],
+    ['Buenos Aires Restaurant Argentine, Steakhouse', 'L&B Spumoni Garden, Italian', 'Villabate Alba Bakery'],
     [],
+    []
+]
+
+places_to_go = [
+    ['Duval St', 'Mallory Square', 'Fort Zachary Taylor Historic State Park'],
+    ['The French Quarter', 'Bourbon Street', 'Jackson Square'],
+    ['34th Street time square', 'Empire State Building', 'Yankee Stadium'],
     [],
-    [],
+    []
 ]
 
 summaries = [
@@ -68,6 +78,10 @@ for (let i = 0; i < 5; i++) {
 
             locInfo.textContent = infos[i];
             summary.textContent = summaries[i];
+
+            // For place info
+            const li = document.createElement('li');
+            li.textContent = ''
         }
 
         location.addEventListener('click', updateInfo);
