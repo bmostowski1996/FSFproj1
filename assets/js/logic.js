@@ -83,7 +83,7 @@ for (let i = 0; i < 5; i++) {
             food_list.replaceChildren();
 
             // For place info
-            
+
             for (const place of places_to_go[i]) {
                 const li = document.createElement('li');
                 li.textContent = place;
