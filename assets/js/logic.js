@@ -73,15 +73,31 @@ for (let i = 0; i < 5; i++) {
             const locInfo = document.querySelector('#loc-info');
             const summary = document.querySelector('#sum-info');
             
-            const place = document.querySelector('#place-info');
-            const food = document.querySelector('#food-info');
+            const place_list = document.querySelector('#place-info');
+            const food_list = document.querySelector('#food-info');
 
             locInfo.textContent = infos[i];
             summary.textContent = summaries[i];
 
+            place_list.replaceChildren();
+            food_list.replaceChildren();
+
             // For place info
-            const li = document.createElement('li');
-            li.textContent = ''
+            
+            for (const place of places_to_go[i]) {
+                const li = document.createElement('li');
+                li.textContent = place;
+                place_list.appendChild(li);
+            }
+
+            // For food info
+
+            for (const food of foods[i]) {
+                const li = document.createElement('li');
+                li.textContent = food;
+                food_list.appendChild(li);
+            }
+            
         }
 
         location.addEventListener('click', updateInfo);
