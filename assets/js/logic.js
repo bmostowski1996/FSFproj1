@@ -10,7 +10,7 @@ foods = [
     ['Blue Heaven', 'Key Lime Pie Bakery', 'First Flight Island Restaurant'],
     ['Gumbo', 'Po\'boys', 'Beignets'],
     ['Buenos Aires Restaurant Argentine, Steakhouse', 'L&B Spumoni Garden, Italian', 'Villabate Alba Bakery'],
-    ['Eats', 'Poor Calvins', 'Home grown GA Restaurant'],
+    ['Lazy Betty', 'Poor Calvins', 'Vortex Bar & Grill'],
     ['Half-Smoke D.C. signature sausage', 'best at Ben’s, Chili Bowl',
         'Mumbo, Sauce Sweet and tangy', 'a local favorite with fried chickenn',
         'Ethiopian Cuisine Authentic flavors in Little Ethiopia']
@@ -25,7 +25,7 @@ places_to_go = [
         'Georgetown',
         'U.S. Capitol',
         'Library of Congress'],
-    []
+    ['Atlanta Botanica Garden' , 'World of Coca-Cola' , 'Martin Luther King, Jr. National Historical Park']
 ]
 
 summaries = [
