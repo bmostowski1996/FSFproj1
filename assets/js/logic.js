@@ -1,4 +1,4 @@
-infos = [
+locations = [
     'Key West, FL', 
     'New Orleans, LA', 
     'New York, NY', 
@@ -84,7 +84,7 @@ for (let i = 0; i < 5; i++) {
             const place_list = document.querySelector('#place-info');
             const food_list = document.querySelector('#food-info');
 
-            locInfo.textContent = infos[i];
+            locInfo.textContent = locations[i];
             summary.textContent = summaries[i];
 
             place_list.replaceChildren();
