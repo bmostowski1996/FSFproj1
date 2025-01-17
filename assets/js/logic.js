@@ -20,12 +20,12 @@ places_to_go = [
     ['Duval St', 'Mallory Square', 'Fort Zachary Taylor Historic State Park'],
     ['The French Quarter', 'Bourbon Street', 'Jackson Square'],
     ['34th Street time square', 'Empire State Building', 'Yankee Stadium'],
+    ['Atlanta Botanica Garden' , 'World of Coca-Cola' , 'Martin Luther King, Jr. National Historical Park']
     ['National Mall',
         'Smithsonian Museum',
         'Georgetown',
         'U.S. Capitol',
         'Library of Congress'],
-    ['Atlanta Botanica Garden' , 'World of Coca-Cola' , 'Martin Luther King, Jr. National Historical Park']
 ]
 
 summaries = [
