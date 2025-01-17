@@ -3,7 +3,7 @@ infos = [
     'New Orleans, LA', 
     'New York, NY', 
     'Atlanta, GA', 
-    'Washington, D.C.'
+    'Washington, D.C.',
 ];
 
 foods = [
@@ -48,7 +48,9 @@ summaries = [
     fine dining to beloved local staples like the half-smoke. Georgetown provides a charming neighborhood vibe 
     with cobblestone streets and boutique shops. Whether you’re strolling along the Tidal Basin during cherry 
     blossom season or taking in a lively local music scene, D.C. offers a mix of history, art, and modern charm 
-    that makes it a standout destination.`
+    that makes it a standout destination.`,
+
+    'test4',
 ]
 
 for (let i = 0; i < 5; i++) {
