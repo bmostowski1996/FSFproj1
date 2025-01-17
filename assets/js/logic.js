@@ -24,7 +24,7 @@ places_to_go = [
         'Smithsonian Museums many are free',
         'Georgetown for shopping, dining, and scenic waterfront views',
         'U.S. Capitol and Library of Congress'],
-    ['Civil War and the 1960s Civil Rights Movement', 'Atlanta History Center chronicles'. 'Martin Luther King Jr. National Historic', 'African-American leader’s life and times', 'Downtown, Centennial Olympic Park', 'encompasses the massive Georgia Aquarium']
+    ['Civil War and the 1960s Civil Rights Movement', 'Atlanta History Center chronicles', 'Martin Luther King Jr. National Historic', 'African-American leaders life and times', 'Downtown, Centennial Olympic Park', 'encompasses the massive Georgia Aquarium']
 ]
 
 summaries = [
