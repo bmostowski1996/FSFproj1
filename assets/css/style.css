@@ -2,14 +2,6 @@
     cursor: pointer;
   }
 
-.info-box {
-    width: 90%;
-    margin-right: 5%;
-    margin-left: auto;
-
-    margin-left: 5%;
-}
-
 
 .popup {
   display: none; /* Hidden by default */
@@ -28,7 +20,7 @@
   position: absolute;
   margin: 100px;
   padding: 0px;
-  border-radius: 0px;
+  /*border-radius: 0px;*/
   width: 400px;
   height: 400px;
   overflow-y: auto;
@@ -40,6 +32,7 @@
   float: right;
   font-size: 28px;
   font-weight: bold;
+  margin: 20px;
 }
 
 .close-btn:hover,

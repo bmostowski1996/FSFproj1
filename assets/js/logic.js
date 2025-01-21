@@ -19,11 +19,7 @@ places_to_go = [
     ['The French Quarter', 'Bourbon Street', 'Jackson Square'],
     ['34th Street time square', 'Empire State Building', 'Yankee Stadium'],
     ['Atlanta Botanica Garden' , 'World of Coca-Cola' , 'Martin Luther King, Jr. National Historical Park'],
-    ['National Mall',
-        'Smithsonian Museum',
-        'Georgetown',
-        'U.S. Capitol',
-        'Library of Congress'],
+    ['National Mall','Smithsonian Museum','Georgetown','U.S. Capitol','Library of Congress'],
 ]
 
 summaries = [
@@ -54,13 +50,9 @@ summaries = [
     Statue of Liberty. Hayden Planetarium which is located within the Hayden Sphere, uses advanced technology 
     to simulate the night sky experiencing the beauty and wonder of the cosmos.`,
 
-    `Washington, D.C., is more than just the nation’s capital; it’s a city brimming with history, culture, 
-    and vibrant local life. Visitors can immerse themselves in American history while touring iconic landmarks 
-    and monuments or exploring the city's many free world-class museums. The food scene offers everything from 
-    fine dining to beloved local staples like the half-smoke. Georgetown provides a charming neighborhood vibe 
-    with cobblestone streets and boutique shops. Whether you’re strolling along the Tidal Basin during cherry 
-    blossom season or taking in a lively local music scene, D.C. offers a mix of history, art, and modern charm 
-    that makes it a standout destination.`, // Still need a summary for this location...
+    `Atlanta is the capital of the U.S. state of Georgia. It played an important part in both the Civil War and the 1960s Civil Rights Movement. 
+    Atlanta History Center chronicles the city’s past, and the Martin Luther King Jr. National Historic Site is dedicated to the African-American 
+    leader’s life and times. Downtown, Centennial Olympic Park, built for the 1996 Olympics, encompasses the massive Georgia Aquarium`, 
 
     `Washington, D.C., is more than just the nation’s capital; it’s a city brimming with history, culture, 
     and vibrant local life. Visitors can immerse themselves in American history while touring iconic landmarks 
