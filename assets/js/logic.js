@@ -103,6 +103,7 @@ for (let i = 0; i < 5; i++) {
         }
 
         updateInfos.push(updateInfo);
+        
         location.addEventListener('click', updateInfo);
     }
 }
@@ -194,7 +195,7 @@ function travel(event) {
         const travelResponse = document.querySelector('#travel-response');
         travelResponse.textContent = `Attempting to travel to ${localStorage.getItem('destination')}`
         
-        let locInd = 0;
+        let locInd = -1;
         if (destination.includes("FL")) {
             locInd = 0;
         } else if (destination.includes("LA")) {
@@ -203,11 +204,17 @@ function travel(event) {
             locInd = 2;
         } else if (destination.includes("GA")) {
             locInd = 3;
-        } else {
+        } else if (destination.includes("D.C.")) {
             locInd = 4;
         }
-        updateInfos[locInd]();
-        openPopup('popup1');
+
+        if (locInd >= 0) {
+            updateInfos[locInd]();
+            openPopup('popup1');
+        } else {
+            alert('More infomation on this destination soon!');
+        }
+        
     }
     
 }
