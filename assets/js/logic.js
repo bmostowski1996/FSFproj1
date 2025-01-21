@@ -168,8 +168,13 @@ function openPopup(popupId) {
   document.querySelectorAll('.popup-trigger').forEach(function(area) {
     area.addEventListener('click', function(e) {
       e.preventDefault();
-      openPopup('popup1');
       // const popupId = this.getAttribute('data-popup');
+
+      const title = this.getAttribute('title');
+
+      if (title !== "N/A") {
+        openPopup('popup1');
+      }
     });
   });
 
