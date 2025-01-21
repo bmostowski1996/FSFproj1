@@ -81,6 +81,10 @@ for (let i = 0; i < 5; i++) {
             locInfo.textContent = locations[i];
             summary.textContent = summaries[i];
 
+            const travelResponse = document.querySelector('#travel-response');
+            travelResponse.textContent = `Travelling to ${locations[i]}`
+            localStorage.setItem('destination', locations[i]);
+
             place_list.replaceChildren();
             food_list.replaceChildren();
 
@@ -197,8 +201,8 @@ function travel(event) {
     if (destination) {
         console.log(`Attempting to travel to ${destination}`);
 
-        const travelResponse = document.querySelector('#travel-response');
-        travelResponse.textContent = `Attempting to travel to ${localStorage.getItem('destination')}`
+        // const travelResponse = document.querySelector('#travel-response');
+        // travelResponse.textContent = `Travelling to ${localStorage.getItem('destination')}`
         
         let locInd = -1;
         if (destination.includes("FL")) {
