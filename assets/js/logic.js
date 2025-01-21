@@ -71,6 +71,8 @@ summaries = [
     that makes it a standout destination.`,
 ]
 
+updateInfos = [];
+
 for (let i = 0; i < 5; i++) {
     let idstr = '#loc' + String(i+1);
     const location = document.querySelector(idstr);
@@ -108,6 +110,7 @@ for (let i = 0; i < 5; i++) {
             
         }
 
+        updateInfos.push(updateInfo);
         location.addEventListener('click', updateInfo);
     }
 }
@@ -178,6 +181,51 @@ function openPopup(popupId) {
     });
   });
 
+// For 
 
+function travel(event) {
+    if (event) {
+        event.preventDefault();
+    }
+    
+    let destination = document.getElementById("destination").value;
 
+    if (destination) {
+        localStorage.setItem('destination', destination);
+    } else {
+        destination = localStorage.getItem('destination');
+    }
+    
+    if (destination) {
+        console.log(`Attempting to travel to ${destination}`);
+
+        const travelResponse = document.querySelector('#travel-response');
+        travelResponse.textContent = `Attempting to travel to ${localStorage.getItem('destination')}`
+        
+        let locInd = 0;
+        if (destination.includes("FL")) {
+            locInd = 0;
+        } else if (destination.includes("LA")) {
+            locInd = 1;
+        } else if (destination.includes("NY")) {
+            locInd = 2;
+        } else if (destination.includes("GA")) {
+            locInd = 3;
+        } else {
+            locInd = 4;
+        }
+        updateInfos[locInd]();
+        openPopup('popup1');
+    }
+    
+}
+
+const form = document.getElementById("destination-form");
+form.addEventListener("submit", travel);
+
+const mockEvent = {
+    preventDefault: () => console.log("Default action prevented")
+};
+
+travel(mockEvent);
 
